@@ -5,7 +5,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  subscription: Visual Studio Enterprise(0ec45264-05e6-4136-b2b7-d9291bb2aeeb)
+  subscription: Azure pour les étudiants(0ec45264-05e6-4136-b2b7-d9291bb2aeeb)
   resourceGroup: Terraform-RG
   storageAccount: tfstatestorage1993
   container: tfstate
@@ -69,4 +69,4 @@ steps:
     command: 'apply'
     workingDirectory: '$(System.DefaultWorkingDirectory)/skip-step'
     commandOptions: 'tfplan'
-    environmentServiceNameAzureRM: '$(subscription)'
+    environgitmentServiceNameAzureRM: '$(subscription)'
