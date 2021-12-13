@@ -13,11 +13,9 @@ variables:
   anyTfChanges: false
 
 steps:
-
 - task: TerraformInstaller@0
-  displayName: install Terraform v0.14.3
   inputs:
-    terraformVersion: '0.14.3'
+    terraformVersion: 'latest'
 
 - task: TerraformTaskV1@0
   displayName: terraform init
