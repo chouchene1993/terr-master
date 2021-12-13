@@ -11,7 +11,12 @@ provider "azurerm" {
   
 }
 
-resource "azurerm_resource_group" "rg" {
+resource "azurerm_resource_group" "rg-01" {
   name     = "RG-Hamza"
+  location = "francecentral"
+}
+
+resource "azurerm_resource_group" "rg-02" {
+  name     = "RG-Chouchene"
   location = "francecentral"
 }
